@@ -1,0 +1,78 @@
+/* Estilos generales */
+:root {
+    --main-background-color: white;
+    --text-color: black;
+    --header-background: #007BFF;
+    --header-color: white;
+    --navbar-background: #22aed1ff;
+    --navbar-text-color: white;
+}
+
+/* Para los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Para el texto del cuerpo */
+p,
+ul,
+ol,
+li {
+    font-family: 'Lora', serif;
+}
+
+/* Tema oscuro con los colores proporcionados */
+.dark-theme {
+    --main-background-color: #182825ff;
+    --text-color: white;
+    --header-background: #013d65ff;
+    --header-color: #22aed1ff;
+    --navbar-background: #6d8ea0ff;
+    --navbar-text-color: white;
+    --button-background: #afa98dff;
+    --button-text-color: black;
+}
+
+/* Estilos generales para el tema claro */
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+#header {
+    background-color: var(--header-background);
+    color: var(--header-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos específicos para el navbar */
+.navbar {
+    background-color: var(--navbar-background);
+    color: var(--navbar-text-color);
+}
+
+.navbar .navbar-brand {
+    color: var(--navbar-text-color);
+}
+
+.navbar .nav-link {
+    color: var(--navbar-text-color);
+}
+
+/* Estilos para el botón de cambio de tema */
+.btn-light-theme {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}
+
+/* Otros estilos específicos según el tema claro */
+.light-theme .btn-light-theme {
+    background-color: #fff;
+    color: #000;
+}
