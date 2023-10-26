@@ -3,7 +3,7 @@ function toggleTheme() {
     const body = document.body;
     const header = document.getElementById("header");
     const navbar = document.querySelector(".navbar");
-    const modal = document.querySelector(".modal");
+
 
     if (body.classList.contains("light-theme")) {
         body.classList.remove("light-theme");
@@ -12,8 +12,7 @@ function toggleTheme() {
         header.classList.add("dark-theme");
         navbar.classList.remove("light-theme");
         navbar.classList.add("dark-theme");
-        modal.classList.remove("light-theme");
-        modal.classList.add("dark-theme");
+
         setCookie("theme", "dark", 365); // Guardar el tema en una cookie
     } else {
         body.classList.remove("dark-theme");
@@ -22,8 +21,7 @@ function toggleTheme() {
         header.classList.add("light-theme");
         navbar.classList.remove("dark-theme");
         navbar.classList.add("light-theme");
-        modal.classList.remove("dark-theme");
-        modal.classList.add("light-theme");
+
         setCookie("theme", "light", 365); // Guardar el tema en una cookie
     }
     // Cambiar el tema del contenido
