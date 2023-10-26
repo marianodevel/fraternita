@@ -9,7 +9,10 @@
 }
 
 /* Para los encabezados */
-h1,
+h1 {
+    font-family: 'IM Fell English SC', serif;
+}
+
 h2,
 h3,
 h4,
@@ -26,7 +29,7 @@ li {
     font-family: 'Lora', serif;
 }
 
-/* Tema oscuro con los colores proporcionados */
+/* Tema oscuro */
 .dark-theme {
     --main-background-color: #182825ff;
     --text-color: white;
@@ -38,7 +41,7 @@ li {
     --button-text-color: black;
 }
 
-/* Estilos generales para el tema claro */
+/* Estilos generales */
 body {
     background-color: var(--main-background-color);
     color: var(--text-color);
@@ -67,6 +70,11 @@ body {
 
 /* Estilos para el botón de cambio de tema */
 .btn-light-theme {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}
+
+.modal-content {
     background-color: var(--button-background);
     color: var(--button-text-color);
 }
